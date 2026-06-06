@@ -1,0 +1,24 @@
+# Python
+__pycache__/
+*.pyc
+venv/
+.env
+
+# PyInstaller / Build artifacts
+build/
+dist/
+*.spec
+
+# YOLO Models
+models/*.pt
+
+# App outputs and recordings
+outputs/
+data/clips/
+data/snapshots/
+data/reports/
+data/detections.db
+
+# Installer Output
+Output/
+Visionguard_Setup.exe

@@ -1,0 +1,22 @@
+# Core
+opencv-python==4.9.0.80
+numpy==1.26.4
+torch>=2.0.0,<2.6.0
+torchvision>=0.15.0,<0.21.0
+
+# YOLO
+ultralytics==8.2.0
+
+# Deep SORT dependencies
+scipy==1.13.0
+scikit-learn==1.4.2
+
+# Utilities
+PyYAML==6.0.1
+tqdm==4.66.2
+Pillow==10.3.0
+
+# GUI & Data
+PyQt6>=6.6.0
+pandas>=2.0.0
+lapx>=0.5.2

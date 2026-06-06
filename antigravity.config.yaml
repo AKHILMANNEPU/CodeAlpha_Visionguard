@@ -1,0 +1,12 @@
+project: VisionGuard AI
+layer: Layer 1 - AI Pipeline
+runner: pytest
+test_file: test_layer1_pipeline.py
+timeout_per_test: 30
+markers:
+  - critical
+  - high
+  - medium
+  - low
+report_format: html
+coverage: true

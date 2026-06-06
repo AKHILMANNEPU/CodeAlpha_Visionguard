@@ -1,0 +1,101 @@
+camera:
+  id: cam_1
+cameras:
+- id: cam_0
+  source: '0'
+- id: cam_1
+  source: '1'
+- id: cam_2
+  source: '1'
+dashboard:
+  chart_hours: 24
+  dwell_days: 7
+  hourly_chart_days: 1
+detection:
+  classes:
+  - 0
+  - 2
+  - 7
+  confidence_threshold: 0.5
+  device: cpu
+  iou_threshold: 0.45
+  model_path: models/yolov8n.pt
+email:
+  enabled: true
+  password: ''
+  recipients: []
+  send_min_priority: LOW
+  sender: ''
+  smtp_host: smtp.gmail.com
+  smtp_port: 587
+  use_tls: true
+notifications:
+  default_channels:
+  - tray
+  - email
+output:
+  font_scale: 0.6
+  line_thickness: 2
+  output_path: outputs/recordings/output.avi
+  save_video: false
+  show_count: true
+  show_display: true
+  show_fps: true
+redis:
+  db: 0
+  host: localhost
+  port: 6379
+  ttl_seconds: 10
+reports:
+  company_name: Industry Surveillance Co.
+  logo_path: ''
+  output_dir: data/reports
+sms:
+  account_sid: ''
+  auth_token: ''
+  enabled: false
+  from_number: ''
+  min_priority: CRITICAL
+  to_numbers: []
+storage:
+  batch_size: 50
+  clip_fps: 15
+  clip_on_alert_types:
+  - ZONE_ENTRY
+  - DWELL
+  - CROWD_HIGH
+  clip_post_seconds: 10
+  clip_pre_seconds: 5
+  clips_dir: data/clips
+  db_path: data/detections.db
+  max_clips_stored: 500
+  save_clips: true
+  snapshot_on_alert_types:
+  - ZONE_ENTRY
+  - ZONE_EXIT
+  - FALLING
+  - LOITERING
+  snapshot_quality: 85
+  snapshots_dir: data/snapshots
+telegram:
+  bot_token: ''
+  chat_id: ''
+  enabled: false
+  send_photos: true
+tracking:
+  iou_threshold: 0.3
+  max_age: 30
+  max_cosine_distance: 0.4
+  min_hits: 3
+  nn_budget: 100
+tray:
+  duration_ms: 5000
+  enabled: true
+video:
+  fps_target: 30
+  height: 720
+  source: 0
+  width: 1280
+webhook:
+  enabled: false
+  endpoints: []
