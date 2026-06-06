@@ -22,3 +22,6 @@ data/detections.db
 # Installer Output
 Output/
 Visionguard_Setup.exe
+
+# Internal Agent Config
+antigravity.config.yaml
